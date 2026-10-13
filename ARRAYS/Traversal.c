@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void traverse(int *arr, int n) {
+void traversal(int *arr, int n) {
     printf("Traversing the array:\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -23,7 +24,7 @@ int main()
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    traverse(arr, n);
+    traversal(arr, n);
     free(arr);
     return 0;
 
